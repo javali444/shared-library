@@ -1,4 +1,7 @@
 def lintChecks(){
-//    ~/node_modules/jslint/bin/jslint.js server.js
-    echo "Lint checks"
+    sh '''
+    #~/node_modules/jslint/bin/jslint.js server.js
+    echo Link Check 
+    #echo Link Check for ${COMPONENT}
+  '''
 }
